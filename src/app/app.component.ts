@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
         var data = [10, 20, 50, 30, 80];
         var pie = d3.pie();
         var color = d3.scaleOrdinal(d3.schemeCategory10);
-        var svg = this.chartContainer.nativeElement.attr("width", width + 100).attr("height", height + 100);
+        var svg = d3.select(".chart").attr("width", width + 100).attr("height", height + 100);
         var outerRadius = width / 2;
         var innerRadius = width / 4;
         var arc = d3.arc()
